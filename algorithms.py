@@ -1,4 +1,4 @@
-def binary_search(list_of_values, value):
+def linear_search(list_of_values, value):
     """
     (list, int) -> int
     Function finds first index of value. If value is not in array, function will return -1
@@ -50,7 +50,20 @@ def merge_sort(lst):
   
   
 def binary_search(list_of_values, value):
-    pass
+    start = 0
+    end = len(list_of_values) - 1
+    partition = 0
+ 
+    while start <= end:
+        partition = (start + end) // 2
+        if list_of_values[partition] < value:
+            start = partition + 1
+        elif list_of_values[partition] > value:
+            end = partition - 1
+        else:
+            return partition
+    return -1
+
   
   
  
