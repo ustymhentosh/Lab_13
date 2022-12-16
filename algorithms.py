@@ -5,8 +5,8 @@ def linear_search(list_of_values, value):
     >>> linear_search([1,2,3,414,1424,1241,24,124,124,1,412,4,],1)
     0
     """
-    for i in range(len(array)):
-        if array[i]==value:
+    for i in range(len(list_of_values)):
+        if list_of_values[i]==value:
             return i
     return -1
   
