@@ -50,6 +50,11 @@ def merge_sort(lst):
   
   
 def binary_search(list_of_values, value):
+    """
+    Executes binary search
+    >>> binary_search([1, 3, 15, 23, 32, 57, 99, 200, 777], 99)
+    6
+    """
     start = 0
     end = len(list_of_values) - 1
     partition = 0
